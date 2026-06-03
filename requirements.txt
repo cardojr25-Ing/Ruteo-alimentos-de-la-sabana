@@ -1,0 +1,1 @@
+streamlit>=1.35.0ortools>=9.15.6755matplotlib>=3.8.0pandas>=2.0.0protobuf>=6.33.1
