@@ -1,14 +1,3 @@
-import sys
-import subprocess
-
-# --- TRUCO DE EMERGENCIA PARA FORZAR INSTALACIÓN ---
-libs_necesarias = ["matplotlib", "ortools", "pandas"]
-for lib in libs_necesarias:
-    try:
-        __import__(lib if lib != "ortools" else "ortools.constraint_solver")
-    except ImportError:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", lib])
-        
 import math
 import streamlit as st
 import matplotlib.pyplot as plt
